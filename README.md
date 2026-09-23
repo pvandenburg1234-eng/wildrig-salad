@@ -45,7 +45,7 @@ Portal → **Container Groups → Deploy**:
 
 | Setting | Value |
 |---|---|
-| Image | `ghcr.io/<you>/wildrig-salad:latest` |
+| Image | `ghcr.io/<you>/wildrig-salad:vN` — use the `vN` tag printed by the Actions run, **not `:latest`**. Salad caches images by tag and will not re-pull `:latest` after you push a change; a new `vN` tag is what rolls out an update. |
 | Replicas | `1` for testing |
 | GPU | an **AMD** class. Verified: RX 7800 XT (37 MH/s), 7900 XT (45 MH/s), 7900 XTX (54 MH/s). RX 9060 XT (18 MH/s, via SRBMiner). RX 9070 XT should work the same way (unverified). Don't put NVIDIA classes in the same group. |
 | vCPU / RAM | 2 vCPU / 4 GB |

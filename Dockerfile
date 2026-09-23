@@ -26,7 +26,8 @@
 #    docker push  YOURUSER/wildrig-salad:latest
 #
 #  ---- SaladCloud container-group settings ----------------------------------
-#    Image Name : ghcr.io/<you>/wildrig-salad:latest   (must be a PUBLIC image)
+#    Image Name : ghcr.io/<you>/wildrig-salad:vN  (PUBLIC image; use the vN tag
+#                 from the Actions run - Salad won't re-pull a changed :latest)
 #    Replicas   : 1   (for testing)
 #    GPU        : an AMD class (RX 7000 / RX 6000). Do NOT mix with NVIDIA.
 #    vCPU / RAM : 2 vCPU / 4 GB   (KawPow is GPU-bound - don't overbuy)
